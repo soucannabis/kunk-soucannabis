@@ -1,0 +1,68 @@
+# Credenciais de teste em producao
+.env.production.test
+
+# Dependências e build
+node_modules/
+dist/
+dist-ssr/
+build/
+coverage/
+*.tsbuildinfo
+.turbo/
+.cache/
+.parcel-cache/
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# SO e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.aider*
+
+# Uploads / storage local da API
+kunk-api/storage/*
+!kunk-api/storage/.gitkeep
+
+# Testes e artefatos locais
+playwright-report/
+test-results/
+*.local
+
+# Projetos legados (referência local; fora do OSS)
+/cadastramento/
+/kunksoucannabis/
+
+# Resíduos da raiz (frontend legado; monorepo usa apps/*)
+/src/
+/public/
+/scripts/
+/index.html
+/vite.config.js
+/styles.css
+/Dockerfile
+/docker-compose.yml
+/entrypoint.sh
+/nginx.conf
+.dockerignore

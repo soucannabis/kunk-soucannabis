@@ -1,0 +1,467 @@
+[
+  {
+    "date_created": "2026-07-25T13:04:26.182Z",
+    "name": "Fábio",
+    "last_name": "Junqueira",
+    "email": "reception01@demo.kunk.local",
+    "phone": "+5511900000400",
+    "help_topic": "informação",
+    "is_associate": "true",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "0357baa5-904a-47f0-968e-fe1c9c250339",
+    "chat_id": "chat-demo-1",
+    "status": "waiting",
+    "associate_name": "Ana Almeida",
+    "associate_code": "20f6efeb-4841-446a-a376-91e07b7daa4e",
+    "date_updated": "2026-08-04T13:04:26.182Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-1.png",
+    "patient_name": "Fábio Junqueira",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "true",
+    "full_name": "Fábio Junqueira",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-07-26T13:04:26.183Z",
+    "name": "Gabriela",
+    "last_name": "Klein",
+    "email": "reception02@demo.kunk.local",
+    "phone": "+5512900000401",
+    "help_topic": "cadastro",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "febbbf08-2cc9-41e3-a4c7-a348be6eb49d",
+    "chat_id": "chat-demo-2",
+    "status": "waiting",
+    "associate_name": "Gabriela Klein",
+    "associate_code": null,
+    "date_updated": "2026-08-05T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-2.png",
+    "patient_name": "Bruno Dias",
+    "attendant": "Admin Demo",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Gabriela Klein",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-07-27T13:04:26.183Z",
+    "name": "Hugo",
+    "last_name": "Lima",
+    "email": "reception03@demo.kunk.local",
+    "phone": "+5513900000402",
+    "help_topic": "agendamento",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "f5e04c51-ff2e-4dac-a2cd-501f3bccf078",
+    "chat_id": "chat-demo-3",
+    "status": "waiting",
+    "associate_name": "Hugo Lima",
+    "associate_code": null,
+    "date_updated": "2026-08-06T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-3.png",
+    "patient_name": "Hugo Lima",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Hugo Lima",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-07-28T13:04:26.183Z",
+    "name": "Iris",
+    "last_name": "Mendes",
+    "email": "reception04@demo.kunk.local",
+    "phone": "+5514900000403",
+    "help_topic": "informação",
+    "is_associate": "true",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "ba23e2d6-9300-4e75-80d0-86ea7165129d",
+    "chat_id": "chat-demo-4",
+    "status": "done",
+    "associate_name": "Diego Junqueira",
+    "associate_code": "1c913b39-7627-462a-86d1-1a1d38a5b19c",
+    "date_updated": "2026-08-07T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-4.png",
+    "patient_name": "Diego Junqueira",
+    "attendant": "Admin Demo",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": "Atendido",
+    "is_prescriber": "false",
+    "full_name": "Iris Mendes",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-07-29T13:04:26.183Z",
+    "name": "João",
+    "last_name": "Nogueira",
+    "email": "reception05@demo.kunk.local",
+    "phone": "+5515900000404",
+    "help_topic": "cadastro",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "88fab2ee-7902-4fea-b5fb-5b2b080c3047",
+    "chat_id": "chat-demo-5",
+    "status": "waiting",
+    "associate_name": "João Nogueira",
+    "associate_code": null,
+    "date_updated": "2026-08-08T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-5.png",
+    "patient_name": "João Nogueira",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "true",
+    "full_name": "João Nogueira",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-07-30T13:04:26.183Z",
+    "name": "Karen",
+    "last_name": "Oliveira",
+    "email": "reception06@demo.kunk.local",
+    "phone": "+5516900000405",
+    "help_topic": "agendamento",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "22619b2e-e067-4521-a945-73900915700a",
+    "chat_id": "chat-demo-6",
+    "status": "waiting",
+    "associate_name": "Karen Oliveira",
+    "associate_code": null,
+    "date_updated": "2026-08-09T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-6.png",
+    "patient_name": "Fábio Pereira",
+    "attendant": "Admin Demo",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Karen Oliveira",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-07-31T13:04:26.183Z",
+    "name": "Lucas",
+    "last_name": "Pereira",
+    "email": "reception07@demo.kunk.local",
+    "phone": "+5517900000406",
+    "help_topic": "informação",
+    "is_associate": "true",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "761d529a-bb13-466f-9d88-e212abaea9ab",
+    "chat_id": "chat-demo-7",
+    "status": "waiting",
+    "associate_name": "Gabriela Silva",
+    "associate_code": "1da6e734-ee6e-4ebf-a377-87e2e8c29fce",
+    "date_updated": "2026-08-10T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-7.png",
+    "patient_name": "Lucas Pereira",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Lucas Pereira",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-01T13:04:26.183Z",
+    "name": "Marina",
+    "last_name": "Queiroz",
+    "email": "reception08@demo.kunk.local",
+    "phone": "+5518900000407",
+    "help_topic": "cadastro",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "99c820e5-e863-41c4-8802-c1e64459e884",
+    "chat_id": "chat-demo-8",
+    "status": "waiting",
+    "associate_name": "Marina Queiroz",
+    "associate_code": null,
+    "date_updated": "2026-08-11T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-8.png",
+    "patient_name": "Hugo Vieira",
+    "attendant": "Admin Demo",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Marina Queiroz",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-02T13:04:26.183Z",
+    "name": "Nuno",
+    "last_name": "Ramos",
+    "email": "reception09@demo.kunk.local",
+    "phone": "+5519900000408",
+    "help_topic": "agendamento",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "27cb0fe0-ca89-4e0b-b4fa-9a47ab1bd52a",
+    "chat_id": "chat-demo-9",
+    "status": "done",
+    "associate_name": "Nuno Ramos",
+    "associate_code": null,
+    "date_updated": "2026-08-04T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-9.png",
+    "patient_name": "Nuno Ramos",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": "Atendido",
+    "is_prescriber": "true",
+    "full_name": "Nuno Ramos",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-03T13:04:26.183Z",
+    "name": "Olívia",
+    "last_name": "Silva",
+    "email": "reception10@demo.kunk.local",
+    "phone": "+5520900000409",
+    "help_topic": "informação",
+    "is_associate": "true",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "d169c073-3d8f-4f83-97a9-92393dd5c604",
+    "chat_id": "chat-demo-10",
+    "status": "waiting",
+    "associate_name": "João Barbosa",
+    "associate_code": "c5d0ed32-0664-4abf-be52-766b3efa2389",
+    "date_updated": "2026-08-05T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-10.png",
+    "patient_name": "João Barbosa",
+    "attendant": "Admin Demo",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Olívia Silva",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-04T13:04:26.183Z",
+    "name": "Paulo",
+    "last_name": "Teixeira",
+    "email": "reception11@demo.kunk.local",
+    "phone": "+5521900000410",
+    "help_topic": "cadastro",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "0137fc2e-5035-44b7-8638-8edc7fd651dc",
+    "chat_id": "chat-demo-11",
+    "status": "waiting",
+    "associate_name": "Paulo Teixeira",
+    "associate_code": null,
+    "date_updated": "2026-08-06T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-11.png",
+    "patient_name": "Paulo Teixeira",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Paulo Teixeira",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-05T13:04:26.183Z",
+    "name": "Queila",
+    "last_name": "Uchoa",
+    "email": "reception12@demo.kunk.local",
+    "phone": "+5522900000411",
+    "help_topic": "agendamento",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "96de7d3b-e28c-4edb-9c43-ed7cea78c44a",
+    "chat_id": "chat-demo-12",
+    "status": "waiting",
+    "associate_name": "Queila Uchoa",
+    "associate_code": null,
+    "date_updated": "2026-08-07T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-12.png",
+    "patient_name": "Lucas Henrique",
+    "attendant": "Admin Demo",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Queila Uchoa",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-06T13:04:26.183Z",
+    "name": "Rafael",
+    "last_name": "Vieira",
+    "email": "reception13@demo.kunk.local",
+    "phone": "+5523900000412",
+    "help_topic": "informação",
+    "is_associate": "true",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "c2165e04-d0a0-437d-be5b-4f51d1e94132",
+    "chat_id": "chat-demo-13",
+    "status": "waiting",
+    "associate_name": "Marina Klein",
+    "associate_code": "613a40e3-5a13-49d8-92c9-231eedc781bc",
+    "date_updated": "2026-08-08T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-13.png",
+    "patient_name": "Rafael Vieira",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "true",
+    "full_name": "Rafael Vieira",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-07T13:04:26.183Z",
+    "name": "Sofia",
+    "last_name": "Wagner",
+    "email": "reception14@demo.kunk.local",
+    "phone": "+5524900000413",
+    "help_topic": "cadastro",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "21c75ec6-2653-4421-8eb7-dcb203b0421f",
+    "chat_id": "chat-demo-14",
+    "status": "done",
+    "associate_name": "Sofia Wagner",
+    "associate_code": null,
+    "date_updated": "2026-08-09T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-14.png",
+    "patient_name": "Nuno Nogueira",
+    "attendant": "Admin Demo",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": "Atendido",
+    "is_prescriber": "false",
+    "full_name": "Sofia Wagner",
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-08T13:04:26.183Z",
+    "name": "Tiago",
+    "last_name": "Xavier",
+    "email": "reception15@demo.kunk.local",
+    "phone": "+5525900000414",
+    "help_topic": "agendamento",
+    "is_associate": "false",
+    "message": "Contato fictício de acolhimento com todos os campos (sample-data).",
+    "code": "15a0cafe-b0a3-4e04-a73d-d49ded431649",
+    "chat_id": "chat-demo-15",
+    "status": "waiting",
+    "associate_name": "Tiago Xavier",
+    "associate_code": null,
+    "date_updated": "2026-08-10T13:04:26.183Z",
+    "avatar_url": "https://cdn.demo.kunk.local/avatars/reception-15.png",
+    "patient_name": "Tiago Xavier",
+    "attendant": "Lia Acolhimento",
+    "tags": [
+      {
+        "tag": "demo"
+      },
+      {
+        "tag": "novo-contato"
+      }
+    ],
+    "completion_reason": null,
+    "is_prescriber": "false",
+    "full_name": "Tiago Xavier",
+    "is_sample": true
+  }
+]

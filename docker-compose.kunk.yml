@@ -1,0 +1,124 @@
+# Stack unificado: kunk-api (:4250) + admin (:4256) + kunk app (:4257)
+services:
+  kunk-api:
+    build:
+      context: ./kunk-api
+      dockerfile: Dockerfile
+    container_name: kunk-api
+    ports:
+      - "4250:4250"
+    env_file:
+      - ./kunk-api/.env
+    environment:
+      PORT: "4250"
+      HOST: "0.0.0.0"
+      NODE_ENV: development
+      STORAGE_PATH: /app/storage
+      # URL pública da API (OAuth redirect). Nunca use o hostname Docker (kunk-api).
+      # No deploy, sobrescreva com a URL pública real. Localhost não recebe webhooks Pagar.me.
+      PUBLIC_API_URL: "http://localhost:4250"
+      CORS_ORIGIN: "http://localhost:4255,http://localhost:4256,http://localhost:4257,http://localhost:4258,http://admin:4256,http://kunk:4257,http://doc-sign:4258"
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
+    volumes:
+      - ./kunk-api/src:/app/src
+      - ./kunk-api/sample-data:/app/sample-data
+      - ./kunk-api/storage:/app/storage
+      - ./kunk-api/sql:/app/sql:ro
+      - kunk_api_node_modules:/app/node_modules
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4250/api/v1/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped
+
+  admin:
+    build:
+      context: .
+      dockerfile: apps/admin/Dockerfile
+    container_name: kunk-admin
+    ports:
+      - "4256:4256"
+    env_file:
+      - ./apps/admin/.env
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
+      WATCHPACK_POLLING: "true"
+      VITE_API_PROXY_TARGET: "http://kunk-api:4250"
+    volumes:
+      - ./apps/admin/src:/app/apps/admin/src
+      - ./apps/admin/index.html:/app/apps/admin/index.html
+      - ./apps/admin/vite.config.js:/app/apps/admin/vite.config.js
+      - ./apps/admin/package.json:/app/apps/admin/package.json
+      - ./packages:/app/packages
+      - admin_node_modules:/app/node_modules
+      - admin_app_node_modules:/app/apps/admin/node_modules
+    depends_on:
+      kunk-api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  kunk:
+    build:
+      context: .
+      dockerfile: apps/kunk/Dockerfile
+    container_name: kunk-app
+    ports:
+      - "4257:4257"
+    env_file:
+      - ./apps/kunk/.env
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
+      WATCHPACK_POLLING: "true"
+      VITE_API_PROXY_TARGET: "http://kunk-api:4250"
+    volumes:
+      - ./apps/kunk/src:/app/apps/kunk/src
+      - ./apps/kunk/index.html:/app/apps/kunk/index.html
+      - ./apps/kunk/vite.config.js:/app/apps/kunk/vite.config.js
+      - ./apps/kunk/public:/app/apps/kunk/public
+      - ./packages:/app/packages
+      - kunk_app_root_node_modules:/app/node_modules
+      - kunk_app_node_modules:/app/apps/kunk/node_modules
+    depends_on:
+      kunk-api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  doc-sign:
+    build:
+      context: .
+      dockerfile: apps/doc-sign/Dockerfile
+    container_name: kunk-doc-sign
+    ports:
+      - "4258:4258"
+    env_file:
+      - ./apps/doc-sign/.env
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
+      WATCHPACK_POLLING: "true"
+      VITE_API_PROXY_TARGET: "http://kunk-api:4250"
+    volumes:
+      - ./apps/doc-sign/src:/app/apps/doc-sign/src
+      - ./apps/doc-sign/index.html:/app/apps/doc-sign/index.html
+      - ./apps/doc-sign/vite.config.js:/app/apps/doc-sign/vite.config.js
+      - ./packages:/app/packages
+      - doc_sign_root_node_modules:/app/node_modules
+      - doc_sign_app_node_modules:/app/apps/doc-sign/node_modules
+    depends_on:
+      kunk-api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  kunk_api_node_modules:
+  admin_node_modules:
+  admin_app_node_modules:
+  kunk_app_root_node_modules:
+  kunk_app_node_modules:
+  doc_sign_root_node_modules:
+  doc_sign_app_node_modules:

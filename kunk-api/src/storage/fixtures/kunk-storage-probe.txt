@@ -1,0 +1,3 @@
+Kunk storage probe
+Este arquivo é enviado pela API ao testar a conexão com o bucket.
+Pode ser apagado com segurança — o teste remove o objeto após o upload.

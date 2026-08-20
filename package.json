@@ -1,0 +1,36 @@
+{
+  "name": "kunksoucannabis-open",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:registration": "npm run dev -w @kunk/registration",
+    "dev:admin": "npm run dev -w @kunk/admin",
+    "dev:kunk": "npm run dev -w @kunk/kunk",
+    "dev:doc-sign": "npm run dev -w @kunk/doc-sign",
+    "test:api": "npm test --prefix kunk-api",
+    "seed:load": "npm run seed:load --prefix kunk-api",
+    "clean:local-files": "npm run clean:local-files --prefix kunk-api",
+    "clean:db": "npm run clean:db --prefix kunk-api",
+    "clean:system-configs": "npm run clean:system-configs --prefix kunk-api",
+    "test:e2e": "npm run test:e2e -w @kunk/registration",
+    "test:e2e:admin": "npm run test:e2e -w @kunk/admin",
+    "test:e2e:admin:ui": "npm run test:e2e:ui -w @kunk/admin",
+    "test:e2e:admin:debug": "npm run test:e2e:debug -w @kunk/admin",
+    "test:e2e:admin:headed": "npm run test:e2e:headed -w @kunk/admin",
+    "test:kunk": "npm test -w @kunk/kunk",
+    "test:e2e:kunk": "npm run test:e2e -w @kunk/kunk",
+    "test:e2e:doc-sign": "npm run test:e2e -w @kunk/doc-sign",
+    "docker:registration": "docker compose -f apps/registration/docker-compose.yml up --build",
+    "docker:admin": "docker compose -f apps/admin/docker-compose.yml up --build",
+    "docker:kunk-app": "docker compose -f apps/kunk/docker-compose.yml up --build",
+    "docker:doc-sign": "docker compose -f apps/doc-sign/docker-compose.yml up --build",
+    "docker:kunk": "docker compose -f docker-compose.kunk.yml up --build"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

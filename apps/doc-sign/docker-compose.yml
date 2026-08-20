@@ -1,0 +1,31 @@
+services:
+  doc-sign:
+    build:
+      context: ../..
+      dockerfile: apps/doc-sign/Dockerfile
+    container_name: kunk-doc-sign
+    ports:
+      - "4258:4258"
+    env_file:
+      - .env
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
+      WATCHPACK_POLLING: "true"
+      VITE_API_PROXY_TARGET: "http://host.docker.internal:4250"
+    volumes:
+      - ./src:/app/apps/doc-sign/src
+      - ./public:/app/apps/doc-sign/public
+      - ./index.html:/app/apps/doc-sign/index.html
+      - ./vite.config.js:/app/apps/doc-sign/vite.config.js
+      - ./package.json:/app/apps/doc-sign/package.json
+      - ../../packages:/app/packages
+      - doc_sign_node_modules:/app/node_modules
+      - doc_sign_app_node_modules:/app/apps/doc-sign/node_modules
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+volumes:
+  doc_sign_node_modules:
+  doc_sign_app_node_modules:

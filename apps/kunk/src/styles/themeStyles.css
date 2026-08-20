@@ -1,0 +1,158 @@
+/* Kunk operational theme — tokens from :root (KunkConfigProvider) */
+
+:root {
+  --kunk-app-bg: #2a3b2b;
+  --kunk-menu-bg: #5a7a5b;
+  --kunk-menu-text: #ffffff;
+  --kunk-menu-hover-bg: #ffffff;
+  --kunk-menu-hover-text: #2a3b2b;
+  --kunk-primary: #5a7a5b;
+  --kunk-accent: #7a5b7a;
+  --kunk-accent-hover: #684c68;
+  --kunk-bg-image: none;
+  --kunk-logo-size: 120px;
+  --kunk-sidebar-offset: 220px;
+}
+
+#root,
+body,
+html {
+  margin: 0;
+  background-color: var(--kunk-app-bg) !important;
+}
+
+/* Logo slot in sidebar — width from admin, natural height, centered */
+.kunk-logo-frame {
+  margin: 0.5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.kunk-logo-frame img {
+  width: auto;
+  height: auto;
+  max-width: none;
+  display: block;
+}
+
+.MainContent {
+  min-height: 100dvh;
+}
+
+/* Sidebar menu: configurable text + hover — bold only on section titles */
+.ListItemButton {
+  color: var(--kunk-menu-text) !important;
+  font-weight: 400 !important;
+}
+
+.ListItemButton .MuiTypography-root {
+  color: inherit !important;
+  font-weight: 400 !important;
+}
+
+.ListItemButton.SidebarSection,
+.ListItemButton.SidebarSection .SidebarSection-label {
+  font-weight: 700 !important;
+}
+
+.ListItemButton:hover {
+  background-color: var(--kunk-menu-hover-bg) !important;
+  color: var(--kunk-menu-hover-text) !important;
+}
+
+.ListItemButton:hover .MuiTypography-root {
+  color: var(--kunk-menu-hover-text) !important;
+}
+
+.ListItemButton:hover .MuiSvgIcon-root {
+  color: var(--kunk-menu-hover-text) !important;
+}
+
+.ListItemButton:active {
+  background-color: var(--kunk-menu-hover-bg) !important;
+  color: var(--kunk-menu-hover-text) !important;
+}
+
+/* Nested items: same hover, keep regular weight */
+.ListItem.nested .ListItem .ListItemButton:hover {
+  background-color: var(--kunk-menu-hover-bg) !important;
+  color: var(--kunk-menu-hover-text) !important;
+  font-weight: 400 !important;
+}
+
+.ListItem.nested .ListItem .ListItemButton:hover .MuiTypography-root,
+.ListItem.nested .ListItem .ListItemButton:hover .MuiSvgIcon-root {
+  color: var(--kunk-menu-hover-text) !important;
+}
+
+.ListItem.nested .ListItem .ListItemButton:hover .MuiTypography-root {
+  font-weight: 400 !important;
+}
+
+.namePage {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--kunk-primary);
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+  opacity: 0.85;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--kunk-menu-bg);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--kunk-primary) #f1f1f1;
+}
+
+/* Light theme tweaks */
+[data-theme='light'] table {
+  color: #222;
+}
+
+[data-theme='light'] .namePage .MuiTypography-root {
+  color: #fff;
+}
+
+/* Cart / tables — parity with legado App.css */
+.pageContainerOptions {
+  margin-left: 10px;
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+  padding: 50px 25px;
+  border-radius: 30px !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.pageContainerTable {
+  margin-left: 10px;
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+  border-radius: 30px !important;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+[data-theme='light'] .pageContainerOptions,
+[data-theme='light'] .pageContainerTable {
+  background-color: #6a876c24;
+}
+

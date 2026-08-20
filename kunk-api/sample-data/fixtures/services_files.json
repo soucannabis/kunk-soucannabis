@@ -1,0 +1,17 @@
+[
+  {
+    "service_id": 1,
+    "file_id": "7aaf3710-c056-4823-800f-4a47fa6e10c6",
+    "is_sample": true
+  },
+  {
+    "service_id": 2,
+    "file_id": "de69d76e-16bf-4aeb-9adb-cf28218e3d9c",
+    "is_sample": true
+  },
+  {
+    "service_id": 3,
+    "file_id": "4f94196c-a4f5-49d6-bec0-ca71b2c10335",
+    "is_sample": true
+  }
+]

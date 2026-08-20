@@ -1,0 +1,31 @@
+services:
+  kunk:
+    build:
+      context: ../..
+      dockerfile: apps/kunk/Dockerfile
+    container_name: kunk-app
+    ports:
+      - "4257:4257"
+    env_file:
+      - .env
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
+      WATCHPACK_POLLING: "true"
+      VITE_API_PROXY_TARGET: "http://host.docker.internal:4250"
+    volumes:
+      - ./src:/app/apps/kunk/src
+      - ./index.html:/app/apps/kunk/index.html
+      - ./vite.config.js:/app/apps/kunk/vite.config.js
+      - ./package.json:/app/apps/kunk/package.json
+      - ./public:/app/apps/kunk/public
+      - ../../packages:/app/packages
+      - kunk_node_modules:/app/node_modules
+      - kunk_app_node_modules:/app/apps/kunk/node_modules
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+volumes:
+  kunk_node_modules:
+  kunk_app_node_modules:

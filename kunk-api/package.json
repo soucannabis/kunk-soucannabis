@@ -1,0 +1,50 @@
+{
+ "name": "kunk-api",
+ "private": true,
+ "version": "0.1.0",
+ "license": "AGPL-3.0-only",
+ "description": "Kunk open-source REST API (PostgreSQL nativo)",
+ "main": "src/server.js",
+ "scripts": {
+  "start": "node src/server.js",
+  "dev": "nodemon src/server.js",
+  "test": "NODE_ENV=test node --test --test-concurrency=1 $(find tests -name '*.test.js' | sort)",
+  "test:unit": "NODE_ENV=test node --test --test-concurrency=1 tests/unit/*.test.js",
+  "test:integration": "NODE_ENV=test node --test --test-concurrency=1 $(find tests/integration -name '*.test.js' | sort)",
+  "test:integration:failed": "NODE_ENV=test node --test --test-concurrency=1 tests/integration/domain/doc-sign.test.js tests/integration/domain/install.test.js tests/integration/domain/orders-listagem.test.js tests/integration/domain/orders-stock-debit.test.js tests/integration/domain/orders.test.js tests/integration/domain/pagarme-soucannabis.test.js tests/integration/domain/products-stock.test.js tests/integration/domain/users-import.test.js tests/integration/freight/quote-config.test.js tests/integration/items/institutional_clients.test.js tests/integration/modules/disabled.test.js",
+  "test:watch": "NODE_ENV=test node --test --watch --test-concurrency=1 $(find tests -name '*.test.js' | sort)",
+  "seed:sample": "node sample-data/seed.js",
+  "seed:sample:generate": "node sample-data/seed.js --generate",
+  "seed:load": "node sample-data/seed-load.js",
+  "seed:load:smoke": "node sample-data/seed-load.js --profile=smoke",
+  "seed:load:medium": "node sample-data/seed-load.js --profile=medium",
+  "clean:local-files": "node scripts/clean-local-files.js",
+  "clean:db": "node scripts/clean-db.js",
+  "clean:system-configs": "node scripts/clean-system-configs.js"
+ },
+ "dependencies": {
+  "@aws-sdk/client-s3": "^3.1089.0",
+  "@google-cloud/storage": "^7.21.0",
+  "bcrypt": "^5.1.1",
+  "cookie-parser": "^1.4.7",
+  "cors": "^2.8.5",
+  "dotenv": "^16.3.1",
+  "express": "^4.18.2",
+  "helmet": "^7.2.0",
+  "multer": "^1.4.5-lts.1",
+  "node-cron": "^3.0.3",
+  "nodemailer": "^6.10.1",
+  "pdf-lib": "^1.17.1",
+  "pdfmake": "^0.2.20",
+  "pg": "^8.16.0",
+  "uuid": "^9.0.1",
+  "zod": "^3.23.8"
+ },
+ "devDependencies": {
+  "nodemon": "^3.1.10",
+  "supertest": "^7.0.0"
+ },
+ "engines": {
+  "node": ">=18"
+ }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "tag": "urgente",
+    "contexts": "orders",
+    "color": "#C62828",
+    "is_sample": true
+  },
+  {
+    "tag": "retirada",
+    "contexts": "orders",
+    "color": "#1565C0",
+    "is_sample": true
+  },
+  {
+    "tag": "primeiro-pedido",
+    "contexts": "orders",
+    "color": "#2E7D32",
+    "is_sample": true
+  },
+  {
+    "tag": "retorno",
+    "contexts": "services",
+    "color": "#6A1B9A",
+    "is_sample": true
+  },
+  {
+    "tag": "teleconsulta",
+    "contexts": "services",
+    "color": "#00838F",
+    "is_sample": true
+  },
+  {
+    "tag": "novo-contato",
+    "contexts": "reception",
+    "color": "#EF6C00",
+    "is_sample": true
+  },
+  {
+    "tag": "follow-up",
+    "contexts": "reception",
+    "color": "#455A64",
+    "is_sample": true
+  },
+  {
+    "tag": "demo",
+    "contexts": "orders,services,reception",
+    "color": "#546E7A",
+    "is_sample": true
+  }
+]

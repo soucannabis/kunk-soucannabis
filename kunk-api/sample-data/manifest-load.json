@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "description": "Sample data massivo para teste de carga do Kunk OSS",
+  "profiles": {
+    "smoke": {
+      "description": "Validação rápida do script (~segundos)",
+      "users": 500,
+      "orders": 800,
+      "services": 200,
+      "reception": 150,
+      "institutional_clients": 20,
+      "professionals": 30,
+      "products": 24,
+      "tags": 20,
+      "files": 10,
+      "reports": 3
+    },
+    "medium": {
+      "description": "Carga padrão para stress de listagens (~minutos)",
+      "users": 5000,
+      "orders": 10000,
+      "services": 3000,
+      "reception": 2000,
+      "institutional_clients": 50,
+      "professionals": 100,
+      "products": 48,
+      "tags": 40,
+      "files": 20,
+      "reports": 5
+    },
+    "large": {
+      "description": "Carga pesada para listas e filtros",
+      "users": 20000,
+      "orders": 50000,
+      "services": 12000,
+      "reception": 8000,
+      "institutional_clients": 100,
+      "professionals": 200,
+      "products": 96,
+      "tags": 60,
+      "files": 40,
+      "reports": 8
+    },
+    "xlarge": {
+      "description": "Carga extrema — pode levar vários minutos e exigir RAM",
+      "users": 50000,
+      "orders": 120000,
+      "services": 30000,
+      "reception": 15000,
+      "institutional_clients": 200,
+      "professionals": 400,
+      "products": 120,
+      "tags": 80,
+      "files": 50,
+      "reports": 10
+    }
+  },
+  "defaults": {
+    "profile": "medium",
+    "batchSize": 250,
+    "patientRatio": 0.2
+  },
+  "notes": [
+    "Não grava fixtures JSON (volume grande).",
+    "Trunca tabelas de negócio e reinsere com is_sample=true.",
+    "Não cria nem trunca system_users — operadores só via Admin/API.",
+    "Preserva system_configs / system_api_credentials (buckets, triage, etc.).",
+    "Rodar: npm run seed:load -- --profile=medium"
+  ]
+}

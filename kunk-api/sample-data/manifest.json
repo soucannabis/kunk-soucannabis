@@ -1,0 +1,43 @@
+{
+ "version": "1.0.0",
+ "description": "Sample data fictício para demo/instalação do Kunk OSS",
+ "counts": {
+ "users": 100,
+ "institutional_clients": 10,
+ "professionals": 10,
+ "products": 5,
+ "tags": 8,
+ "orders": 50,
+ "services": 20,
+ "reception": 15,
+ "reports": 3,
+ "files": 5,
+ "users_files": 5,
+ "orders_files": 5,
+ "services_files": 3,
+ "users_api": 0
+ },
+ "seed_order": [
+ "files",
+ "users",
+ "institutional_clients",
+ "professionals",
+ "products",
+ "tags",
+ "orders",
+ "services",
+ "reception",
+ "reports",
+ "users_api",
+ "users_files",
+ "orders_files",
+ "services_files"
+ ],
+ "notes": [
+ "Todos os dados são fictícios — não copiar dados de produção.",
+ "Não cria system_users — operadores só via Admin/API.",
+ "Associados sample sem senha; sem token de API conhecido.",
+ "Produtos: 5 linhas canabinoides (CBD, THC, CBG, CBC, CBN) com SKU KNK-*.",
+ "Rodar com: npm run seed:sample"
+ ]
+}

@@ -1,0 +1,38 @@
+services:
+  kunk-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kunk-api
+    ports:
+      - "4250:4250"
+    env_file:
+      - .env
+    environment:
+      PORT: "4250"
+      HOST: "0.0.0.0"
+      NODE_ENV: development
+      STORAGE_PATH: /app/storage
+      # OAuth/webhooks: sobrescreva com URL pública no deploy. Localhost não recebe Pagar.me.
+      PUBLIC_API_URL: "http://localhost:4250"
+      # Polling garante reload com bind mount
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
+    volumes:
+      # Código local → container (hot reload)
+      - ./src:/app/src
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./storage:/app/storage
+      # Mantém node_modules do container (não sobrescreve com o host)
+      - kunk_api_node_modules:/app/node_modules
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4250/api/v1/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+volumes:
+  kunk_api_node_modules:

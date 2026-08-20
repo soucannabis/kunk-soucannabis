@@ -1,0 +1,4 @@
+sku,name,type,unit,concentration,price,amount,category,batch,status
+KNK-OIL-100,Spectrum Oil 10ml,oil,ml,100,189.90,40,wellness,LOT-DEMO-001,published
+KNK-CAP-25,Calm Caps 30ct,capsule,unit,25,159.90,60,sleep,LOT-DEMO-003,published
+KNK-BAL-50,Recovery Balm 50g,topical,g,50,99.90,45,recovery,LOT-DEMO-006,published

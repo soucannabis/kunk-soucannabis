@@ -1,0 +1,40 @@
+/* Brand fonts — import from each app main.jsx after Google Fonts link in index.html */
+:root {
+  --kunk-font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --kunk-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  font-family: var(--kunk-font-sans);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* MUI Material + Joy (Kunk) */
+.MuiTypography-root,
+.MuiButton-root,
+.MuiInputBase-root,
+.MuiInputBase-input,
+.MuiFormLabel-root,
+.MuiInputLabel-root,
+.MuiMenuItem-root,
+.MuiChip-label,
+.MuiTab-root,
+.MuiTableCell-root,
+.MuiListItemText-primary,
+.MuiListItemText-secondary,
+.MuiAlert-message,
+[class*="JoyTypography-"],
+[class*="JoyButton-"],
+[class*="JoyInput-"],
+[class*="JoyLink-"],
+[class*="JoyFormLabel-"] {
+  font-family: var(--kunk-font-sans) !important;
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "date_created": "2026-08-04T13:04:26.183Z",
+    "date_updated": "2026-08-13T13:04:26.183Z",
+    "name": "Pedidos por status (demo)",
+    "report_code": "325ffe9a-5213-4ff2-8499-17b658a8afb2",
+    "query_config": {
+      "source": "orders",
+      "group_by": "status"
+    },
+    "sql_query": "-- sample only; execução livre bloqueada na API",
+    "type": "table",
+    "dashboard_queries": {
+      "orders_by_status": true
+    },
+    "layout_positions": {
+      "x": 0,
+      "y": 0,
+      "w": 6,
+      "h": 4
+    },
+    "chart_config": {
+      "type": "bar",
+      "stacked": false
+    },
+    "created_by": "sample-seed",
+    "tags": [
+      {
+        "tag": "demo"
+      }
+    ],
+    "column_maps": {
+      "status": "Status",
+      "count": "Total"
+    },
+    "embedded_report_codes": [],
+    "favorites": {
+      "users": []
+    },
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-05T13:04:26.183Z",
+    "date_updated": "2026-08-12T13:04:26.183Z",
+    "name": "Associados ativos (demo)",
+    "report_code": "86afc2e0-2982-4dfe-8671-8e3023b2b2e5",
+    "query_config": {
+      "source": "users",
+      "filter": {
+        "status": "active"
+      }
+    },
+    "sql_query": "-- sample only",
+    "type": "table",
+    "dashboard_queries": {
+      "active_users": true
+    },
+    "layout_positions": {
+      "x": 6,
+      "y": 0,
+      "w": 6,
+      "h": 4
+    },
+    "chart_config": {
+      "type": "pie"
+    },
+    "created_by": "sample-seed",
+    "tags": [
+      {
+        "tag": "demo"
+      }
+    ],
+    "column_maps": {
+      "fullname": "Nome",
+      "status": "Status"
+    },
+    "embedded_report_codes": [],
+    "favorites": {
+      "users": []
+    },
+    "is_sample": true
+  },
+  {
+    "date_created": "2026-08-06T13:04:26.183Z",
+    "date_updated": "2026-08-11T13:04:26.183Z",
+    "name": "Dashboard operacional (demo)",
+    "report_code": "6e7c284a-d639-4b3f-9ea6-2efcb13123ee",
+    "query_config": {
+      "widgets": [
+        "orders",
+        "services",
+        "reception"
+      ]
+    },
+    "sql_query": "-- sample only",
+    "type": "dashboard",
+    "dashboard_queries": {
+      "orders": true,
+      "services": true,
+      "reception": true
+    },
+    "layout_positions": {
+      "x": 0,
+      "y": 4,
+      "w": 12,
+      "h": 6
+    },
+    "chart_config": {
+      "type": "mixed"
+    },
+    "created_by": "sample-seed",
+    "tags": [
+      {
+        "tag": "demo"
+      }
+    ],
+    "column_maps": {},
+    "embedded_report_codes": [],
+    "favorites": {
+      "users": []
+    },
+    "is_sample": true
+  }
+]
