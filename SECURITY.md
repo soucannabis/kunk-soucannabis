@@ -4,7 +4,7 @@
 
 Se encontrar uma vulnerabilidade no Kunk (API, apps ou pacotes deste monorepo):
 
-1. Abra um **GitHub Security Advisory** privado em [soucannabis/kunksoucannabis-open](https://github.com/soucannabis/kunksoucannabis-open/security/advisories), ou
+1. Abra um **GitHub Security Advisory** privado em [soucannabis/kunk-soucannabis](https://github.com/soucannabis/kunk-soucannabis/security/advisories), ou
 2. Abra uma issue marcada como segurança **sem** publicar detalhes exploráveis em público.
 
 Não use issues públicas para PoCs de exploração ou dados sensíveis.

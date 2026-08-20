@@ -11,8 +11,8 @@ Site oficial: [https://kunksoucannabis.ong.br/](https://kunksoucannabis.ong.br/)
 Requisitos: Node.js ≥ 18 e PostgreSQL.
 
 ```bash
-git clone https://github.com/soucannabis/kunksoucannabis-open.git
-cd kunksoucannabis-open
+git clone https://github.com/soucannabis/kunk-soucannabis.git
+cd kunk-soucannabis
 npm install
 ```
 

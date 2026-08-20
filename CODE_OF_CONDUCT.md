@@ -38,7 +38,7 @@ Este Código de Conduta se aplica em todos os espaços da comunidade e também q
 
 ## Enforcement
 
-Casos de comportamento abusivo, de assédio ou de outro modo inaceitável podem ser reportados abrindo um [GitHub Security Advisory](https://github.com/soucannabis/kunksoucannabis-open/security/advisories) privado ou uma issue marcada para a equipe mantenedora **sem** expor detalhes sensíveis em público.
+Casos de comportamento abusivo, de assédio ou de outro modo inaceitável podem ser reportados abrindo um [GitHub Security Advisory](https://github.com/soucannabis/kunk-soucannabis/security/advisories) privado ou uma issue marcada para a equipe mantenedora **sem** expor detalhes sensíveis em público.
 
 Todas as queixas serão analisadas e investigadas de forma rápida e justa. A equipe mantenedora é obrigada a respeitar a privacidade e a segurança de quem reportar qualquer incidente.
 

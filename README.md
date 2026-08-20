@@ -22,8 +22,8 @@ Módulos de terceiros (frete, pagamentos, calendário, etc.) vêm **desabilitado
 ## Quick start
 
 ```bash
-git clone https://github.com/soucannabis/kunksoucannabis-open.git
-cd kunksoucannabis-open
+git clone https://github.com/soucannabis/kunk-soucannabis.git
+cd kunk-soucannabis
 npm install
 ```
 
@@ -95,4 +95,4 @@ Este projeto é distribuído sob a [GNU Affero General Public License v3.0](./LI
 
 Veja [CONTRIBUTING.md](./CONTRIBUTING.md) e o [Código de Conduta](./CODE_OF_CONDUCT.md). Para vulnerabilidades, use [SECURITY.md](./SECURITY.md).
 
-Abra issues e pull requests em [soucannabis/kunksoucannabis-open](https://github.com/soucannabis/kunksoucannabis-open). Preferência: mudanças pequenas, com testes na API (`npm test` em `kunk-api`) quando o comportamento mudar.
+Abra issues e pull requests em [soucannabis/kunk-soucannabis](https://github.com/soucannabis/kunk-soucannabis). Preferência: mudanças pequenas, com testes na API (`npm test` em `kunk-api`) quando o comportamento mudar.
