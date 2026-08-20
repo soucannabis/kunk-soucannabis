@@ -1,3 +1,7 @@
+[![Logo SouCannabis](https://soucannabis.ong.br/wp-content/uploads/2023/05/Logotipo-Horizontal-Colorido300x100.png)](https://soucannabis.ong.br/) 
+
+Um sistema desenvolvido pela [**Associação SouCannabis**](https://soucannabis.ong.br/)
+
 # Kunk
 
 Sistema open source de gestão associativa para cannabis medicinal.
