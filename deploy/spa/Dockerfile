@@ -63,8 +63,8 @@ RUN chmod +x /entrypoint.sh
 ARG APP_DIR=apps/admin
 COPY --from=build /app/${APP_DIR}/dist /usr/share/nginx/html
 
-ENV PORT=8080 \
-    KUNK_API_PUBLIC_HOST=kunk-api-production.up.railway.app
+ENV PORT=8080
+# KUNK_API_PUBLIC_HOST must be set at runtime (no hardcoded default).
 
 EXPOSE 8080
 

@@ -2,7 +2,11 @@
 set -eu
 
 : "${PORT:=8080}"
-: "${KUNK_API_PUBLIC_HOST:=kunk-api-production.up.railway.app}"
+
+if [ -z "${KUNK_API_PUBLIC_HOST:-}" ]; then
+  echo "KUNK_API_PUBLIC_HOST is required (hostname only, e.g. kunk-api.example.com)" >&2
+  exit 1
+fi
 
 export PORT KUNK_API_PUBLIC_HOST
 
